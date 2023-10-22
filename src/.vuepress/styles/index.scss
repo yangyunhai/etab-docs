@@ -1,0 +1,21 @@
+.vp-sidebar-group .vp-sidebar-link{
+    margin-bottom: 4px;
+}
+.vp-sidebar-heading{
+    font-weight: 600;
+}
+.vp-page-title{
+    display: none;
+}
+.vp-hero-info{
+    flex-direction: column;
+}
+.vp-breadcrumb li:first-child a{
+    display: none;
+}
+.vp-breadcrumb li:nth-child(2)::before{
+    display: none;
+}
+.vp-breadcrumb li:nth-child(2) a{
+    padding-left: 0px;
+}
