@@ -1,47 +1,88 @@
-import fsExtra from 'fs-extra';
-import path from "path";
 /**
 https://theme-hope.vuejs.press/zh/config/theme/layout.html
-只需要两层
+手动写算了，不好控制排序
 */
-const getFileName = (fileName)=>{
-    return fileName.split('.md')[0]
-}
-
-const isExcludeFiles = (fileName)=>{
-    return ["README.md","CHANGELOG.md"].includes(fileName)
-}
-
 export const onNewSidebar = () => {
-    const rootPath = "docs";
-    const root = path.join(__dirname, `../../${rootPath}`);
-    const dirs = fsExtra.readdirSync(root);
-    const sidebarList = [];
-    //第一层目录
-    for (let i = 0; i < dirs.length; i++) {
-        const item = {
-            text: dirs[i],
-            children: []
-        }
-        if (dirs[i].indexOf(".md") == -1) {
-            // 第二层文件
-            const files = fsExtra.readdirSync(path.join(root, `/${dirs[i]}`));
-            for (let j = 0; j < files.length; j++) {
-                if(!isExcludeFiles(files[j])){
-                    const fileName = getFileName(files[j]);
-                    item.children.push({
-                        text: fileName,
-                        link: `${rootPath}/${dirs[i]}/${fileName}`
-                    })
-                }
-                
+ return [
+    {
+        text:"🌏安装",
+        children:[
+            {
+                text:"Chrome浏览器安装",
+                link:"/cn/install/chrome"
+            },
+            {
+                text:"Edge浏览器安装",
+                link:"/cn/install/edge"
+            },
+            {
+                text:"Firefox浏览器安装",
+                link:"/cn/install/firefox"
+            },
+            {
+                text:"360极速浏览器安装",
+                link:"/cn/install/360"
+            },
+            {
+                text:"Safari浏览器",
+                link:"/cn/install/safari"
+            },
+            {
+                text:"其他浏览器安装",
+                link:"/cn/install/other"
             }
-        }
-        if(!isExcludeFiles(dirs[i])){
-            sidebarList.push(item)
-        }
-    }
-    console.log(JSON.stringify(sidebarList,'',6),)
-    return sidebarList;
-
+        ]
+    },
+    {
+        text:"🤏关于我们",
+        children:[
+            {
+                text:"为什么要做Etab",
+                link:"/cn/about/why"
+            },
+            {
+                text:"内容合作",
+                link:"/cn/about/cooperate"
+            },
+            {
+                text:"关注我们",
+                link:"/cn/about/about"
+            },
+            {
+                text:"特别鸣谢",
+                link:"/cn/about/thank"
+            },
+        ]
+    },
+    {
+        text:"🤞使用帮助",
+        children:[
+            {
+                text:"社区讨论",
+                link:"/cn/help/skills"
+            },
+            {
+                text:"常见问题",
+                link:"/cn/help/faq"
+            },
+            {
+                text:"使用技巧",
+                link:"/cn/help/community"
+            }
+        ]
+    },
+    {
+        text:"🔐服务协议",
+        children:[
+            {
+                text:"隐私政策",
+                link:"/cn/serves/privacy"
+            },
+            {
+                text:"免责声明",
+                link:"/cn/serves/disclaimer"
+            },
+        ]
+    },
+ ]
 }

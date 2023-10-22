@@ -1,4 +1,4 @@
-# firefox浏览器安装 [​](#firefox浏览器安装)
+# firefox浏览器安装
 
 你可以在 Firefox Add-ons 页面下载 `Etab新标签页` 扩展，安装步骤如下：
 

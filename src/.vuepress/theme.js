@@ -1,22 +1,23 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import sidebar from "./sidebar.js";
+
 export default hopeTheme({
   author: {
     name: "鬼哥",
-    url: "https://Etab.store/",
+    url: "https://etab.store/",
   },
   logo: "/logo.png",
   repo: "/yangyunhai/etab-docs",
   docsDir: "src",
   sidebar,
   print:false,
+  displayFooter:false,
   plugins: {
     mdEnhance: {
       align: true,
       attrs: true,
       chart: false,
       codEtabs: true,
-      demo: false,
       echarts: false,
       figure: true,
       flowchart: true,

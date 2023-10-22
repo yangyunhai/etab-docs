@@ -10,12 +10,6 @@
 .vp-hero-info{
     flex-direction: column;
 }
-.vp-breadcrumb li:first-child a{
+.vp-breadcrumb{
     display: none;
-}
-.vp-breadcrumb li:nth-child(2)::before{
-    display: none;
-}
-.vp-breadcrumb li:nth-child(2) a{
-    padding-left: 0px;
 }

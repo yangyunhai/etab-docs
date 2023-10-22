@@ -1,4 +1,4 @@
-# edge浏览器安装 [​](#edge浏览器安装)
+# edge浏览器安装
 
 Etab新标签页 Edge 浏览器扩展仅支持在新版 Edge 使用，如果您使用内建的旧版 Edge 浏览器，请先[点击这里下载新版 Edge 浏览器](https://www.microsoft.com/edge)。
 

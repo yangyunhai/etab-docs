@@ -4,7 +4,7 @@ title: 首页
 heroImage: https://Etab.store/static/images/logo.png
 actions:
   - text: 更多文档
-    link: /docs/
+    link: /cn/install/chrome.html
     type: primary
 features:
   - title: 有颜有料更有趣
