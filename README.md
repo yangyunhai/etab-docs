@@ -4,11 +4,10 @@
     <a herf="https://etab.store/"><h1 align="center">etab新标签页</h1></a>
 </p>
 
-<h1 align="center">etab-docs</h1>
 <h4 align="center">etab新标签页官方文档✨</h4>
 
 
-## 感谢优秀的开源社区(非全部)
+## 感谢优秀的开源社区
 
 [Vue3](https://vuejs.org/)
 
